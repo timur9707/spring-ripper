@@ -9,6 +9,8 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
+    <context:annotation-config/>
+    <bean class="com.epam.ripper.ProfilingHandlerBeanPostProcessor"/>
     <bean class="com.epam.ripper.InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="com.epam.ripper.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
